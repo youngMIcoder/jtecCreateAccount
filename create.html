@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V1</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="/views/images/icons/favicon.ico"/>
+
+	<link rel="stylesheet" type="text/css" href="/views/css/util.css">
+	<link rel="stylesheet" type="text/css" href="/views/css/main.css">
+	<!-- <link rel="alternate" href="/views/css/index.css"> -->
+<!--===============================================================================================-->
+</head>
+<body>
+	<!-- dialog start -->
+	<dialog class="modal" id="modal">
+		<link rel="stylesheet" href="/views/css/index.css">
+		<div id="puter" class="put">
+			<form action="">
+			  <div  class="transfer">
+				<label class="lab" for="">bank transfer</label>
+				<input type="number" class="num" disabled value="6112969805">
+			  </div>
+			  <div class="transfer tran ">
+				<label class="lab" for="">crypto</label>
+				<input type="text" id="wip" class="num" disabled value="0xc67B9e41CCeBBf8b3eC7EA1d9f6A57E91CCEF9Df">
+			  </div>
+			</form>
+		  </div>
+		<form id="paymentForm">
+			<div class="form-group">
+			  <label for="email">Email Address</label>
+			  <input type="email" id="email-address" required />
+			</div>
+			<div class="form-group">
+			  <label for="amount">Amount</label>
+			  <input placeholder="put required amount" type="tel" value="" id="amount" required />
+			</div>
+			<div class="form-group">
+			  <label for="first-name">First Name</label>
+			  <input type="text" id="first-name" />
+			</div>
+			<div class="form-group">
+			  <label for="last-name">Last Name</label>
+			  <input type="text" id="last-name" />
+			</div>
+			<div class="form-submit">
+			  <p class="pay" type="" id="pay"> Pay </p>
+			</div>
+
+
+			<h4 style="color: rgba(255, 0, 0, 0.39);">NOTICE</h4> <p style="color: red; font-weight: bold;">fill in the info just as in your banl</p>
+		  </form>
+
+		  
+		<button type="button" id="mode">close</button>
+	</dialog>
+	
+	<div id="none" class="limiter">
+		<div class="container-login100">
+			<div class="wrap-login100">
+				<div class="login100-pic js-tilt" data-tilt>
+					<img src="/views/images/img-01.png" alt="IMG">
+				</div>
+
+				<form class="login100-form validate-form">
+					<span class="login100-form-title">
+						Create  your jtec account
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input100" type="text" name="email" placeholder="Email">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-envelope" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<input required class="input100" type="password" name="pass" placeholder="Password">
+						<span class="focus-input100"></span>
+						<span class="symbol-input100">
+							<i class="fa fa-lock" aria-hidden="true"></i>
+						</span>
+					</div>
+
+					<div class="wrap-input100 validate-input middlee" data-validate="key is required">
+						<!-- <input type="text" name="" id="" class="input100" type="" placeholder="add key"> -->
+
+						<select required name="choose" class="middle" aria-placeholder="choose pack" id="sel">
+							<option id="val" value="5000">dogMinner  5$</option>
+							<option id="vall" value="10000">dgMinner  10$</option>
+							<option id="valll" value="15000">btc Minner 15$</option>
+							<option id="vallll" value="20000">eth Minner  20$</option>
+							<option id="vallll" value="2000">eth Minner  2$</option>
+							
+						</select>
+
+					</div>
+					
+					
+					<div class="container-login100-form-btn">
+						<button id="done"  class="login100-form-btn">
+							Create Account
+						</button>
+					</div>
+
+					<div class="text-center p-t-12">
+						<span class="txt1">
+							Forgot
+						</span>
+						<a class="txt2" href="#">
+							Username / Password?
+						</a>
+					</div>
+					
+					<div class="text-center p-t-136">
+						<button id="" class="txt2">
+							login
+							<i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
+						</button>
+					</div>
+				</form>
+				<!-- <button type="button" id="mod">open</button> -->
+			</div>
+		</div>
+	</div>
+	
+	
+
+	
+<!-- 
+	<script >
+		$('.js-tilt').tilt({
+			scale: 1.1
+		})
+	</script> -->
+<!--===============================================================================================-->
+	<script src="/views/script/main.js"></script>
+
+</body>
+</html>
